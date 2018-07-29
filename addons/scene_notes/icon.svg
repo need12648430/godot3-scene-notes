@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64px"
+   height="64px"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="SVGRoot"
+   inkscape:version="0.92.2 2405546, 2018-03-11"
+   sodipodi:docname="icon.svg"
+   inkscape:export-filename="/home/jjohansen/Development/Godot/Addons/addons/scene_notes/icon.svg.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="8"
+     inkscape:cx="28.841599"
+     inkscape:cy="37.389675"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="742"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:grid-bbox="true"
+     showguides="true"
+     inkscape:snap-grids="true"
+     inkscape:object-nodes="true"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       spacingy="2"
+       spacingx="2"
+       units="px"
+       id="grid42"
+       type="xygrid" />
+    <sodipodi:guide
+       position="54,10"
+       orientation="0,1"
+       id="guide2070"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs26">
+    <inkscape:path-effect
+       bendpath4="m 19.75,15.75 v 24.5"
+       bendpath3="m 19.75,40.25 h 24.5"
+       bendpath2="m 44.25,15.75 v 24.5"
+       bendpath1="m 19.75,15.75 h 24.5"
+       xx="true"
+       yy="false"
+       is_visible="true"
+       id="path-effect983"
+       effect="envelope" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       is_visible="true"
+       id="path-effect981"
+       effect="bspline" />
+    <inkscape:path-effect
+       only_selected="false"
+       apply_with_weight="true"
+       apply_no_weight="true"
+       helper_size="0"
+       steps="2"
+       weight="33.333333"
+       is_visible="true"
+       id="path-effect977"
+       effect="bspline" />
+    <inkscape:path-effect
+       overflow_perspective="false"
+       vertical_mirror="false"
+       horizontal_mirror="false"
+       deform_type="envelope_deformation"
+       is_visible="true"
+       id="path-effect975"
+       down_right_point="44.25,40.25"
+       down_left_point="19.75,40.25"
+       up_right_point="44.25,15.75"
+       up_left_point="19.75,15.75"
+       effect="perspective-envelope" />
+    <inkscape:path-effect
+       live_update="true"
+       vertical_mirror="false"
+       horizontal_mirror="false"
+       is_visible="true"
+       id="path-effect973"
+       gridpoint32x33x34x35="32,28"
+       gridpoint29x31="38.125,28"
+       gridpoint28x30="25.875,28"
+       gridpoint25x27="44.25,28"
+       gridpoint24x26="19.75,28"
+       gridpoint22x23="32,34.125"
+       gridpoint20x21="32,21.875"
+       gridpoint19="38.125,34.125"
+       gridpoint18="25.875,34.125"
+       gridpoint17="38.125,21.875"
+       gridpoint16="25.875,21.875"
+       gridpoint15="44.25,34.125"
+       gridpoint14="19.75,34.125"
+       gridpoint13="44.25,21.875"
+       gridpoint12="19.75,21.875"
+       gridpoint10x11="32,40.25"
+       gridpoint8x9="32,15.75"
+       gridpoint7="38.125,40.25"
+       gridpoint6="25.875,40.25"
+       gridpoint5="38.125,15.75"
+       gridpoint4="25.875,15.75"
+       gridpoint3="44.25,40.25"
+       gridpoint2="19.75,40.25"
+       gridpoint1="44.25,15.75"
+       gridpoint0="19.75,15.75"
+       effect="lattice2" />
+    <inkscape:path-effect
+       fuse_tolerance="0"
+       vertical_pattern="true"
+       prop_units="false"
+       tang_offset="0"
+       normal_offset="-1.2"
+       spacing="0"
+       scale_y_rel="false"
+       prop_scale="1"
+       copytype="single_stretched"
+       pattern="M 8,0 C 8,0 8,24 0,24"
+       is_visible="true"
+       id="path-effect957"
+       effect="skeletal" />
+    <inkscape:path-effect
+       bendpath4="M 20,12 V 36"
+       bendpath3="M 20,36 H 44"
+       bendpath2="M 44,12 V 36"
+       bendpath1="M 20,12 H 44"
+       xx="true"
+       yy="true"
+       is_visible="true"
+       id="path-effect850"
+       effect="envelope" />
+    <inkscape:path-effect
+       fuse_tolerance="0"
+       vertical_pattern="false"
+       prop_units="true"
+       tang_offset="0"
+       normal_offset="0"
+       spacing="0"
+       scale_y_rel="false"
+       prop_scale="1"
+       copytype="single_stretched"
+       pattern="m 8.3535534,0 c 0,0 0,20 -8.00000001,28"
+       is_visible="true"
+       id="path-effect5066"
+       effect="skeletal" />
+  </defs>
+  <metadata
+     id="metadata29">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#999999;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="m 36,54 c 4,-8 4,-8 12,-12 H 36 Z"
+       id="path2038"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="M 20,18 H 44"
+       id="path2011"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path2013"
+       d="M 20,26 H 44"
+       style="fill:none;stroke:#999999;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="M 20,34 H 40"
+       id="path2017"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#999999;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 32,54 H 16 V 10 h 32 v 28"
+       id="path2040"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 34,54 v 2 h 2 v -2 z"
+       id="path2042"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path2044"
+       d="m 48,40 v 2 h 2 v -2 z"
+       style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+</svg>
