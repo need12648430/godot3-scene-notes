@@ -12,3 +12,5 @@ Scene hierarchies can get complicated, and there's no easy way of documenting th
 * Godot 3 ~ **a e s t h e t i c** ~ is fully supported. It uses your syntax theme, and loads some pretty icons.
 
 ![Preview of Scene Notes](preview/scene-notes.gif)
+
+[![Shamelessly begging for change](https://az743702.vo.msecnd.net/cdn/kofi1.png?v=0)](https://ko-fi.com/A0A4H42F)
