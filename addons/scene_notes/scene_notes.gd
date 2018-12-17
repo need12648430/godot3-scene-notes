@@ -113,6 +113,8 @@ func display_note(root):
 func display_empty():
 	instance.get_node("Toolbars/Toolbar/Scene").text = "[empty]"
 	instance.get_node("Toolbars/Toolbar/Icon").texture = get_icon("Node", "EditorIcons")
+	instance.get_node("Content/Editor").readonly = true
+	instance.get_node("Content/Editor").text = ""
 
 # BUG: when a new (blank) scene is created, no signal is emitted
 # so there's no way to display the [empty] note for new scene creation
