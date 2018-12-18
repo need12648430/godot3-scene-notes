@@ -135,6 +135,9 @@ func add_syntax_highlights():
 	
 	for tag in TAGS:
 		editor.add_keyword_color(tag, get_syntax_color("keyword_color"))
+	
+	for cls in ClassDB.get_class_list():
+		editor.add_keyword_color(cls, get_syntax_color("keyword_color"))
 
 # traverses the tree recursively, highlighting node names as we go
 func add_tree_highlights(root, editor, color):
