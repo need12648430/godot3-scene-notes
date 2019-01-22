@@ -52,7 +52,7 @@ func setup_dock(dock):
 	# track changes to the tree
 	get_tree().connect("tree_changed", self, "add_syntax_highlights")
 	
-	notes = load_config("notes.ini")
+	notes = load_config("scene-notes.ini")
 	
 	scene_changed(get_edited_scene())
 
@@ -61,7 +61,7 @@ func cleanup_dock(dock):
 	if current_scene:
 	  save_notes()
 	
-	save_config("notes.ini", notes)
+	save_config("scene-notes.ini", notes)
 	
 	notes = null
 	disconnect("scene_changed", self, "scene_changed")
