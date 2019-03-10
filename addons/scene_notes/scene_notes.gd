@@ -11,6 +11,7 @@ var current_scene = null
 var notes = null
 var about
 var more
+var last_syntax_highlight = 0
 
 func _init() . (SceneNotesDock):
 	pass
@@ -120,8 +121,14 @@ func display_empty():
 # so there's no way to display the [empty] note for new scene creation
 # the `SceneTree.tree_changed` event should probably fire but it doesn't
 
-# resets the syntax highlighting and adds some our own
+# resets the syntax highlighting and adds some of our own
 func add_syntax_highlights():
+	# maximum of 15 fps
+	if OS.get_time_msec() - last_syntax_highlight < 64:
+		return
+	
+	last_syntax_highlight = OS.get_time_msec()
+	
 	var root = get_edited_scene()
 	
 	if !root:
