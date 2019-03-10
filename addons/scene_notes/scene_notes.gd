@@ -110,6 +110,7 @@ func display_note(root):
 	instance.get_node("Toolbars/Toolbar/Scene").text = root.filename.split("/")[-1]
 	instance.get_node("Toolbars/Toolbar/Icon").texture = get_icon(root.get_class(), "EditorIcons")
 	instance.get_node("Content/Editor").readonly = false
+	add_syntax_highlights(true)
 
 func display_empty():
 	instance.get_node("Toolbars/Toolbar/Scene").text = "[empty]"
@@ -122,12 +123,12 @@ func display_empty():
 # the `SceneTree.tree_changed` event should probably fire but it doesn't
 
 # resets the syntax highlighting and adds some of our own
-func add_syntax_highlights():
+func add_syntax_highlights(force = false):
 	# maximum of 15 fps
-	if OS.get_time_msec() - last_syntax_highlight < 64:
+	if ! force or OS.get_ticks_msec() - last_syntax_highlight < 64:
 		return
 	
-	last_syntax_highlight = OS.get_time_msec()
+	last_syntax_highlight = OS.get_ticks_msec()
 	
 	var root = get_edited_scene()
 	
