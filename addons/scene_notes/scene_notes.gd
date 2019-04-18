@@ -55,7 +55,7 @@ func setup_dock(dock):
 	
 	notes = load_config("scene-notes.ini")
 	
-	scene_changed(get_edited_scene())
+	scene_changed(get_edited_scene(), false)
 
 # clean up before freeing the dock instance
 func cleanup_dock(dock):
@@ -73,8 +73,8 @@ func cleanup_dock(dock):
 	# track changes to the tree
 	get_tree().disconnect("tree_changed", self, "add_syntax_highlights")
 
-func scene_changed(root):
-	if current_scene:
+func scene_changed(root, save_old = true):
+	if save_old and current_scene:
 		# gotta handle the old scene before opening a new one
 		save_notes()
 	
