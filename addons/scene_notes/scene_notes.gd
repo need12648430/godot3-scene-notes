@@ -44,11 +44,13 @@ func setup_dock(dock):
 	more = dock.get_node("Toolbars/Toolbar/More")
 	more.icon = get_icon("arrow", "OptionButton")
 	var popup = more.get_popup()
+	popup.add_item("Save")
 	popup.add_item("About")
 	popup.connect("id_pressed", self, "menu_clicked")
 	
 	connect("scene_changed", self, "scene_changed")
 	connect("scene_closed", self, "scene_closed")
+	editor.connect("text_changed", self, "text_changed")
 	
 	# track changes to the tree
 	get_tree().connect("tree_changed", self, "add_syntax_highlights")
@@ -56,6 +58,10 @@ func setup_dock(dock):
 	notes = load_config("scene-notes.ini")
 	
 	scene_changed(get_edited_scene(), false)
+
+func text_changed():
+	var label = instance.get_node("Toolbars/Toolbar/Scene")
+	label.add_color_override("font_color", Color(1, 0, 0))
 
 # clean up before freeing the dock instance
 func cleanup_dock(dock):
@@ -173,19 +179,28 @@ func load_notes():
 
 # save our notes to the config
 func save_notes():
+	var label = instance.get_node("Toolbars/Toolbar/Scene")
+	
 	if ! len(instance.get_node("Content/Editor").text):
 		notes.erase_section(current_scene)
+		label.add_color_override("font_color", Color(1, 1, 1))
 		return
 	
 	notes.set_value(
 		current_scene,
 		"note",
 		instance.get_node("Content/Editor").text
-	)	
+	)
+	
+	label.add_color_override("font_color", Color(1, 1, 1))
 
 func menu_clicked(id):
 	# only one option right now :p
-	about.popup_centered()
+	match id:
+		0:
+			save_notes()
+		1:
+			about.popup_centered()
 
 func open_link(url):
 	OS.shell_open(url)
