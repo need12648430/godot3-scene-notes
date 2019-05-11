@@ -50,6 +50,8 @@ func setup_dock(dock):
 	
 	connect("scene_changed", self, "scene_changed")
 	connect("scene_closed", self, "scene_closed")
+	connect("resource_saved", self, "scene_saved")
+	
 	editor.connect("text_changed", self, "text_changed")
 	
 	# track changes to the tree
@@ -70,11 +72,17 @@ func cleanup_dock(dock):
 	notes = null
 	disconnect("scene_changed", self, "scene_changed")
 	disconnect("scene_closed", self, "scene_closed")
+	disconnect("resource_saved", self, "scene_saved")
+	
 	more.get_popup().disconnect("id_pressed", self, "menu_clicked")
 	about.get_node("MarginContainer/RichTextLabel").disconnect("meta_clicked", self, "open_link")
 	get_editor_interface().get_editor_viewport().remove_child(about)
 	# track changes to the tree
 	get_tree().disconnect("tree_changed", self, "add_syntax_highlights")
+
+func scene_saved(resource):
+	if resource.resource_path == current_scene or resource.resource_path == "res://default_env.tres":
+		save_notes()
 
 func scene_changed(root, save_old = true):
 	if save_old and current_scene:
