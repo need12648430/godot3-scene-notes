@@ -65,10 +65,7 @@ func text_changed():
 
 # clean up before freeing the dock instance
 func cleanup_dock(dock):
-	if current_scene:
-	  save_notes()
-	
-	save_config("scene-notes.ini", notes)
+	save_notes()
 	
 	notes = null
 	disconnect("scene_changed", self, "scene_changed")
@@ -192,10 +189,11 @@ func save_notes():
 		instance.get_node("Content/Editor").text
 	)
 	
+	save_config("scene-notes.ini", notes)
+	
 	label.add_color_override("font_color", Color(1, 1, 1))
 
 func menu_clicked(id):
-	# only one option right now :p
 	match id:
 		0:
 			save_notes()
