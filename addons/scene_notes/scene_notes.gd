@@ -81,7 +81,7 @@ func cleanup_dock(dock):
 	get_tree().disconnect("tree_changed", self, "add_syntax_highlights")
 
 func scene_saved(resource):
-	if resource.resource_path == current_scene or resource.resource_path == "res://default_env.tres":
+	if current_scene and resource.resource_path == current_scene or resource.resource_path == "res://default_env.tres":
 		save_notes()
 
 func scene_changed(root, save_old = true):
@@ -105,7 +105,7 @@ func scene_changed(root, save_old = true):
 
 # don't want to close a scene without saving its notes, now do we?
 func scene_closed(path):
-	if current_scene == path:
+	if current_scene and current_scene == path:
 		save_notes()
 		current_scene = null
 	
